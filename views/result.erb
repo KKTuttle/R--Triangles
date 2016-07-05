@@ -1,0 +1,9 @@
+<h1>Triangle Tracker</h1>
+<% if @triangle.triangle?() %>
+  <h2>Your triangle is:<%= @triangle.type() %></h2>
+<% else %>
+  <h2>That is not a triangle!</h2>
+<% end %>
+<form action="/" method="get">
+  <button class="btn-danger" type="submit" name="reset">Try it again</button>
+</form>

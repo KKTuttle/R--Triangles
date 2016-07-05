@@ -19,7 +19,7 @@ describe (Triangle) do
       expect(test_triangle.type()).to(eq('equilateral'))
     end
     it('returns isosceles if two sides are equal') do
-      test_triangle= Triangle.new(5, 5, 3)
+      test_triangle= Triangle.new(2, 2, 3)
       expect(test_triangle.type()).to(eq('isosceles'))
     end
     it('returns scalene if no sides are equal') do
